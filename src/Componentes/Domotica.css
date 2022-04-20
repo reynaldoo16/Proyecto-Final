@@ -1,0 +1,27 @@
+.tech-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/tech-2f51a.appspot.com/o/tecnologias.jpg?alt=media&token=1948aa04-5efd-4e73-8ba3-96bd5709c01c");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tech-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px){
+    .tech-section {
+        background-size: 150vh;
+        background-position: 54%;
+    }
+}

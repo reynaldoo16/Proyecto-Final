@@ -1,0 +1,121 @@
+.devices-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/tech-2f51a.appspot.com/o/accesorios-para-automatizar-sistema-seguridad-ajax.jpg?alt=media&token=a3b82712-7614-471f-90b6-79e56645179d");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.devices-section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.devices-text {
+  position: absolute;
+  z-index: 4;
+  color: rgb(255, 255, 255);
+}
+
+.mini-contenedor {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  bottom: 0;
+}
+
+.imgs:nth-child(1) {
+  position: relative;
+  bottom: 0;
+  width: 200px;
+  z-index: 3;
+}
+
+.imgs:nth-child(2) {
+  position: absolute;
+  right: 10vw;
+  bottom: 0;
+  width: 300px;
+  z-index: 2;
+}
+
+.imgs:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  z-index: 1;
+}
+
+.device-image {
+    width: 100%;
+}
+
+.control-section {
+    background-color: #003756;
+}
+
+@media only screen and (max-width: 600px) {
+  .imgs:nth-child(2) {
+    display: none;
+  }
+
+  .devices-section {
+    background-position: 50%;
+    background-size: 170vh;
+  }
+
+  .imgs:nth-child(3) {
+    width: 200px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .imgs:nth-child(1) {
+      animation: imagen1 infinite 3s linear alternate;
+    }
+  }
+
+  @keyframes imagen1 {
+    from {
+      left: 0%;
+    }
+
+    to {
+      left: 40%;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  @media (prefers-reduced-motion: no-preference) {
+    .imgs:nth-child(1) {
+      animation: imagen1 10s infinite linear alternate;
+    }
+  }
+
+  @keyframes imagen1 {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 80%;
+    }
+  }
+}
+
+
